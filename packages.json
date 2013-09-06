@@ -68,6 +68,16 @@
 			]
 		},
 		{
+			"name": "Package Syncing",
+			"details": "https://github.com/Chris---/SublimeText-Package-Syncing",
+			"labels": ["sync"],
+			"releases": [
+				{
+					"details": "https://github.com/Chris---/SublimeText-Package-Syncing/tree/master"
+				}
+			]
+		},
+		{
 			"name": "Preference Helper",
 			"details": "https://github.com/Chris---/SublimeText-Preference-Helper",
 			"releases": [
