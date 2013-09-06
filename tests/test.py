@@ -16,10 +16,10 @@ import re
 import json
 import unittest
 
-from collections import OrderedDict
-from functools import wraps
-from urllib.request import urlopen
-from urllib.error import HTTPError
+# from collections import OrderedDict
+# from functools import wraps
+# from urllib.request import urlopen
+# from urllib.error import HTTPError
 
 
 ################################################################################
@@ -34,58 +34,6 @@ def _open(filepath, *args, **kwargs):
         filepath = os.path.join("..", filepath)
 
     return open(filepath, *args, **kwargs)
-
-
-def generator_class(cls):
-    """Class decorator for classes that use test generating methods.
-
-    A class that is decorated with this function will be searched for methods
-    starting with "generate_" (similar to "test_") and then run like a nosetest
-    generator.
-    Note: The generator function must be a classmethod!
-
-    Generate tests using the following statement:
-        yield method, (arg1, arg2, arg3)  # ...
-    """
-    for name in list(cls.__dict__.keys()):
-        generator = getattr(cls, name)
-        if not name.startswith("generate_") or not callable(generator):
-            continue
-
-        if not generator.__class__.__name__ == 'method':
-            raise TypeError("Generator methods must be classmethods")
-
-        # Create new methods for each `yield`
-        for sub_call in generator():
-            method, params = sub_call
-
-            @wraps(method)
-            def wrapper(self, method=method, params=params):
-                return method(self, *params)
-
-            # Do not attempt to print lists/dicts with printed lenght of 1000 or
-            # more, they are not interesting for us (probably the whole file)
-            args = []
-            for v in params:
-                string = repr(v)
-                if len(string) > 1000:
-                    args.append('...')
-                else:
-                    args.append(repr(v))
-
-            mname = method.__name__
-            if mname.startswith("_test"):
-                mname = mname[1:]
-            elif not mname.startswith("test_"):
-                mname = "test_" + mname
-
-            name = "%s(%s)" % (mname, ", ".join(args))
-            setattr(cls, name, wrapper)
-
-        # Remove the generator afterwards, it did its work
-        delattr(cls, name)
-
-    return cls
 
 
 def get_package_name(data):
@@ -129,12 +77,6 @@ class TestContainer(object):
         self.assertIsInstance(data['packages'], list)
 
     def _test_repository_package_order(self, include, data):
-        m = re.search(r"(?:^|/)(0-9|[a-z])\.json$", include)
-        if not m:
-            self.fail("Include filename does not match")
-
-        # letter = include[-6]
-        letter = m.group(1)
         packages = []
         for pdata in data['packages']:
             pname = get_package_name(pdata)
@@ -142,16 +84,6 @@ class TestContainer(object):
                 self.fail("Package names must be unique: " + pname)
             else:
                 packages.append(pname)
-
-            # TODO: Test for *all* "previous_names"
-
-        # Check if in the correct file
-        for package_name in packages:
-            if letter == '0-9':
-                self.assertTrue(package_name[0].isdigit())
-            else:
-                self.assertEqual(package_name[0].lower(), letter,
-                                 "Package inserted in wrong file")
 
         # Check package order
         self.assertEqual(packages, sorted(packages, key=str.lower))
@@ -223,148 +155,31 @@ class TestContainer(object):
                     self.assertRegex(plat,
                                      r"^\*|(osx|linux|windows)(-x(32|64))?$")
 
-    def _test_error(self, msg, e=None):
-        if e:
-            if isinstance(e, HTTPError):
-                self.fail("%s: %s" % (msg, e))
-            else:
-                self.fail("%s: %r" % (msg, e))
-        else:
-            self.fail(msg)
+class PackageTests(TestContainer, unittest.TestCase):
 
-    @classmethod
-    def _fail(cls, *args):
-        return cls._test_error, args
+    def test_packages(self):
 
+        repository = "packages.json"
+        try:
+            with _open(repository) as f:
+                contents = f.read()
+                data = json.loads(contents)
+        except Exception as e:
+            self.fail("Could not parse %s" % repository)
 
-@generator_class
-class ChannelTests(TestContainer, unittest.TestCase):
-    maxDiff = None
+        # `repository` is for output during tests only
+        self._test_repository_indents(repository, contents)
+        self._test_repository_keys(repository, data)
+        self._test_repository_package_order(repository, data)
 
-    with _open('channel.json') as f:
-        j = json.load(f)
+        for package in data['packages']:
+            self._test_package(repository, package)
 
-    def test_channel_keys(self):
-        keys = sorted(self.j.keys())
-        self.assertEqual(keys, ['repositories', 'schema_version'])
+            package_name = get_package_name(package)
 
-        self.assertEqual(self.j['schema_version'], '2.0')
-        self.assertIsInstance(self.j['repositories'], list)
-
-        for repo in self.j['repositories']:
-            self.assertIsInstance(repo, str)
-
-    def test_channel_repo_order(self):
-        repos = self.j['repositories']
-        self.assertEqual(repos, sorted(repos, key=str.lower))
-
-    @classmethod
-    def generate_repository_tests(cls):
-        if __name__ != '__main__':
-            # Do not generate tests for all repositories (those hosted online)
-            # when testing with unittest's crawler; only when run directly.
-            return
-
-        for repository in cls.j['repositories']:
-            if repository.startswith('.'):
-                continue
-            if not repository.startswith("http"):
-                raise
-
-            print("fetching %s" % repository)
-
-            # Download the repository
-            try:
-                with urlopen(repository) as f:
-                    source = f.read().decode("utf-8")
-            except Exception as e:
-                yield cls._fail("Downloading %s failed" % repository, e)
-                continue
-
-            if not source:
-                yield cls._fail("%s is empty" % repository)
-                continue
-
-            # Parse the repository (do not consider their includes)
-            try:
-                data = json.loads(source)
-            except Exception as e:
-                yield cls._fail("Could not parse %s" % repository ,e)
-                continue
-
-            # Check for the schema version first (and generator failures it's
-            # badly formatted)
-            if 'schema_version' not in data:
-                yield cls._fail("No schema_version found in %s" % repository)
-                continue
-            schema = float(data['schema_version'])
-            if schema not in (1.0, 1.1, 1.2, 2.0):
-                yield cls._fail("Unrecognized schema version %s in %s"
-                                % (schema, repository))
-                continue
-            # Do not generate 1000 failing tests for not yet updated repos
-            if schema != 2.0:
-                print("schema version %s, skipping" % data['schema_version'])
-                continue
-
-            # `repository` is for output during tests only
-            yield cls._test_repository_keys, (repository, data)
-
-            for package in data['packages']:
-                yield cls._test_package, (repository, package)
-
-                package_name = get_package_name(package)
-
-                if 'releases' in package:
-                    for release in package['releases']:
-                        (yield cls._test_release,
-                              ("%s (%s)" % (package_name, repository),
-                               release, False))
-
-
-@generator_class
-class RepositoryTests(TestContainer, unittest.TestCase):
-    maxDiff = None
-
-    with _open('repository.json') as f:
-        j = json.load(f, object_pairs_hook=OrderedDict)
-
-    def test_repository_keys(self):
-        keys = sorted(self.j.keys())
-        self.assertEqual(keys, ['includes', 'packages', 'schema_version'])
-
-        self.assertEqual(self.j['schema_version'], '2.0')
-        self.assertEqual(self.j['packages'], [])
-        self.assertIsInstance(self.j['includes'], list)
-
-        for include in self.j['includes']:
-            self.assertIsInstance(include, str)
-
-    @classmethod
-    def generate_include_tests(cls):
-        for include in cls.j['includes']:
-            try:
-                with _open(include) as f:
-                    contents = f.read()
-                data = json.loads(contents, object_pairs_hook=OrderedDict)
-            except Exception as e:
-                yield cls._test_error, ("Error while reading %r" % include, e)
-                continue
-
-            # `include` is for output during tests only
-            yield cls._test_repository_indents, (include, contents)
-            yield cls._test_repository_keys, (include, data)
-            yield cls._test_repository_package_order, (include, data)
-
-            for package in data['packages']:
-                yield cls._test_package, (include, package)
-
-                package_name = get_package_name(package)
-
-                if 'releases' in package:
-                    for release in package['releases']:
-                        (yield cls._test_release,
-                              ("%s (%s)" % (package_name, include), release))
+            if 'releases' in package:
+                for release in package['releases']:
+                    self._test_release("%s (%s)" % (package_name, repository), release, False)
 
 
 ################################################################################
