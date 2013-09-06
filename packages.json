@@ -63,6 +63,7 @@
 			"labels": ["development"],
 			"releases": [
 				{
+					"sublime_text": "*",
 					"details": "https://github.com/Chris---/SublimeText-Package-Reloader/tree/master"
 				}
 			]
@@ -73,6 +74,7 @@
 			"labels": ["sync"],
 			"releases": [
 				{
+					"sublime_text": "*",
 					"details": "https://github.com/Chris---/SublimeText-Package-Syncing/tree/master"
 				}
 			]
