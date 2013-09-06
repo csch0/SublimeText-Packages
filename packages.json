@@ -1,6 +1,104 @@
 {
 	"schema_version": "2.0",
 	"packages": [
-
+		{
+			"name": "Calendar Week",
+			"details": "https://github.com/Chris---/SublimeText-Calendar-Week",
+			"releases": [
+				{
+					"sublime_text": "*",
+					"details": "https://github.com/Chris---/SublimeText-Calendar-Week/tree/master"
+				}
+			]
+		},
+		{
+			"name": "File Navigator",
+			"details": "https://github.com/Chris---/SublimeText-File-Navigator",
+			"labels": ["file navigation"],
+			"releases": [
+				{
+					"sublime_text": "*",
+					"details": "https://github.com/Chris---/SublimeText-File-Navigator/tree/master"
+				}
+			],
+			"previous_names": [
+				"Sublime File Navigator"
+			]
+		},
+		{
+			"name": "LaTeX Blindtext",
+			"details": "https://github.com/Chris---/SublimeText-LaTeX-Blindtext",
+			"labels": ["latex"],
+			"releases": [
+				{
+					"sublime_text": "*",
+					"details": "https://github.com/Chris---/SublimeText-LaTeX-Blindtext/tree/master"
+				}
+			]
+		},
+		{
+			"name": "LaTeX-cwl",
+			"details": "https://github.com/Chris---/LaTeX-cwl",
+			"labels": ["latex"],
+			"releases": [
+				{
+					"sublime_text": "*",
+					"details": "https://github.com/Chris---/LaTeX-cwl/tree/master"
+				}
+			]
+		},
+		{
+			"name": "oauthlib",
+			"details": "https://github.com/Chris---/SublimeText-OAuthlib",
+			"releases": [
+				{
+					"sublime_text": "*",
+					"details": "https://github.com/Chris---/SublimeText-OAuthlib/tree/master"
+				}
+			]
+		},
+		{
+			"name": "Preference Helper",
+			"details": "https://github.com/Chris---/SublimeText-Preference-Helper",
+			"releases": [
+				{
+					"sublime_text": "*",
+					"details": "https://github.com/Chris---/SublimeText-Preference-Helper/tree/master"
+				}
+			]
+		},
+		{
+			"name": "Sublime Text 2 Snippets",
+			"details": "https://github.com/Chris---/SublimeText-Sublime-Text-2-Snippets",
+			"labels": ["snippets"],
+			"releases": [
+				{
+					"sublime_text": "*",
+					"details": "https://github.com/Chris---/SublimeText-Sublime-Text-2-Snippets/tree/master"
+				}
+			]
+		},
+		{
+			"name": "Sublime Text 3 Snippets",
+			"details": "https://github.com/Chris---/SublimeText-Sublime-Text-3-Snippets",
+			"labels": ["snippets"],
+			"releases": [
+				{
+					"sublime_text": "*",
+					"details": "https://github.com/Chris---/SublimeText-Sublime-Text-3-Snippets/tree/master"
+				}
+			]
+		},
+		{
+			"name": "TeX Live Package Manager",
+			"details": "https://github.com/Chris---/SublimeText-TeX-Live-Package-Manager",
+			"labels": ["latex"],
+			"releases": [
+				{
+					"sublime_text": "*",
+					"details": "https://github.com/Chris---/SublimeText-TeX-Live-Package-Manager/tree/master"
+				}
+			]
+		}
 	]
 }
