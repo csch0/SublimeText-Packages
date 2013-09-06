@@ -58,6 +58,16 @@
 			]
 		},
 		{
+			"name": "Package Reloader",
+			"details": "https://github.com/Chris---/SublimeText-Package-Reloader",
+			"labels": ["development"],
+			"releases": [
+				{
+					"details": "https://github.com/Chris---/SublimeText-Package-Reloader/tree/master"
+				}
+			]
+		},
+		{
 			"name": "Preference Helper",
 			"details": "https://github.com/Chris---/SublimeText-Preference-Helper",
 			"releases": [
