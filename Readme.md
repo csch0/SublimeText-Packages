@@ -9,6 +9,8 @@ Repository for the package.json of the following packages:
 - [LaTeX Blindtext](https://github.com/Chris---/SublimeText-LaTeX-Blindtext)
 - [LaTeX-cwl](https://github.com/Chris---/LaTeX-cwl)
 - [oauthlib](https://github.com/Chris---/SublimeText-OAuthlib)
+- [Package Reloader](https://github.com/Chris---/SublimeText-Package-Reloader)
+- [Package Syncing](https://github.com/Chris---/SublimeText-Package-Syncing)
 - [Preference Helper](https://github.com/Chris---/SublimeText-Preference-Helper)
 - [Sublime Text 2 Snippets](https://github.com/Chris---/SublimeText-Sublime-Text-2-Snippets)
 - [Sublime Text 3 Snippets](https://github.com/Chris---/SublimeText-Sublime-Text-3-Snippets)
