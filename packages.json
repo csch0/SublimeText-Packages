@@ -75,7 +75,7 @@
 			"releases": [
 				{
 					"sublime_text": "*",
-					"details": "https://github.com/Chris---/SublimeText-Package-Syncing/tree/master"
+					"details": "https://github.com/Chris---/SublimeText-Package-Syncing/tags"
 				}
 			]
 		},
