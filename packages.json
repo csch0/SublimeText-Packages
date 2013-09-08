@@ -7,7 +7,7 @@
 			"releases": [
 				{
 					"sublime_text": "*",
-					"details": "https://github.com/Chris---/SublimeText-Calendar-Week/tree/master"
+					"details": "https://github.com/Chris---/SublimeText-Calendar-Week/tags"
 				}
 			]
 		},
@@ -18,7 +18,7 @@
 			"releases": [
 				{
 					"sublime_text": "*",
-					"details": "https://github.com/Chris---/SublimeText-File-Navigator/tree/master"
+					"details": "https://github.com/Chris---/SublimeText-File-Navigator/tags"
 				}
 			],
 			"previous_names": [
@@ -32,7 +32,7 @@
 			"releases": [
 				{
 					"sublime_text": "*",
-					"details": "https://github.com/Chris---/SublimeText-LaTeX-Blindtext/tree/master"
+					"details": "https://github.com/Chris---/SublimeText-LaTeX-Blindtext/tags"
 				}
 			]
 		},
@@ -53,7 +53,7 @@
 			"releases": [
 				{
 					"sublime_text": "*",
-					"details": "https://github.com/Chris---/SublimeText-OAuthlib/tree/master"
+					"details": "https://github.com/Chris---/SublimeText-OAuthlib/tags"
 				}
 			]
 		},
@@ -85,7 +85,7 @@
 			"releases": [
 				{
 					"sublime_text": "*",
-					"details": "https://github.com/Chris---/SublimeText-Preference-Helper/tree/master"
+					"details": "https://github.com/Chris---/SublimeText-Preference-Helper/tags"
 				}
 			]
 		},
@@ -118,7 +118,7 @@
 			"releases": [
 				{
 					"sublime_text": "*",
-					"details": "https://github.com/Chris---/SublimeText-TeX-Live-Package-Manager/tree/master"
+					"details": "https://github.com/Chris---/SublimeText-TeX-Live-Package-Manager/tags"
 				}
 			]
 		}
