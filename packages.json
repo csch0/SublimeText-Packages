@@ -64,7 +64,7 @@
 			"releases": [
 				{
 					"sublime_text": "*",
-					"details": "https://github.com/Chris---/SublimeText-Package-Reloader/tree/master"
+					"details": "https://github.com/Chris---/SublimeText-Package-Reloader/tags"
 				}
 			]
 		},
