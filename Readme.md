@@ -6,6 +6,7 @@ Repository for the package.json of the following packages:
 
 - [Calendar Week](https://github.com/Chris---/SublimeText-Calendar-Week)
 - [File Navigator](https://github.com/Chris---/SublimeText-File-Navigator)
+- [Git GUI Clients](https://github.com/Chris---/SublimeText-Git-GUI-Clients)
 - [LaTeX Blindtext](https://github.com/Chris---/SublimeText-LaTeX-Blindtext)
 - [LaTeX-cwl](https://github.com/Chris---/LaTeX-cwl)
 - [oauthlib](https://github.com/Chris---/SublimeText-OAuthlib)
@@ -26,6 +27,8 @@ Repository for the package.json of the following packages:
 Support any of this projects via [gittip][] or [paypal][].
 
 [![Support via Gittip](https://rawgithub.com/chris---/Donation-Badges/master/gittip.jpeg)][gittip] [![Support via PayPal](https://rawgithub.com/chris---/Donation-Badges/master/paypal.jpeg)][paypal]
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Chris---/sublimetext-packages/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 [gittip]: https://www.gittip.com/Chris---
 [paypal]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZWZCJPFSZNXEW
