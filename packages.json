@@ -26,6 +26,16 @@
 			]
 		},
 		{
+			"name": "Git GUI Clients",
+			"details": "https://github.com/Chris---/SublimeText-Git-GUI-Clients",
+			"releases": [
+				{
+					"sublime_text": "*",
+					"details": "https://github.com/Chris---/SublimeText-Git-GUI-Clients/tags"
+				}
+			]
+		},
+		{
 			"name": "LaTeX Blindtext",
 			"details": "https://github.com/Chris---/SublimeText-LaTeX-Blindtext",
 			"labels": ["latex"],
