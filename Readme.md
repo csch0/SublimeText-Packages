@@ -7,6 +7,7 @@ Repository for the package.json of the following packages:
 - [Calendar Week](https://github.com/Chris---/SublimeText-Calendar-Week)
 - [File Navigator](https://github.com/Chris---/SublimeText-File-Navigator)
 - [Git GUI Clients](https://github.com/Chris---/SublimeText-Git-GUI-Clients)
+- [Keymap Redefiner](https://github.com/Chris---/SublimeText-Keymap-Redefiner)
 - [LaTeX Blindtext](https://github.com/Chris---/SublimeText-LaTeX-Blindtext)
 - [LaTeX-cwl](https://github.com/Chris---/LaTeX-cwl)
 - [oauthlib](https://github.com/Chris---/SublimeText-OAuthlib)

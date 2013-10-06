@@ -36,6 +36,17 @@
 			]
 		},
 		{
+			"name": "Keymap Redefiner",
+			"details": "https://github.com/Chris---/SublimeText-Keymap-Redefiner",
+			"labels": ["latex"],
+			"releases": [
+				{
+					"sublime_text": "*",
+					"details": "https://github.com/Chris---/SublimeText-Keymap-Redefiner/tags"
+				}
+			]
+		},
+		{
 			"name": "LaTeX Blindtext",
 			"details": "https://github.com/Chris---/SublimeText-LaTeX-Blindtext",
 			"labels": ["latex"],
