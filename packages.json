@@ -38,7 +38,6 @@
 		{
 			"name": "Keymap Redefiner",
 			"details": "https://github.com/Chris---/SublimeText-Keymap-Redefiner",
-			"labels": ["latex"],
 			"releases": [
 				{
 					"sublime_text": "*",
