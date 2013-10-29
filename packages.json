@@ -142,6 +142,17 @@
 					"details": "https://github.com/Chris---/SublimeText-TeX-Live-Package-Manager/tags"
 				}
 			]
+		},
+		{
+			"name": "TikZ",
+			"details": "https://github.com/Chris---/SublimeText-TikZ",
+			"labels": ["latex"],
+			"releases": [
+				{
+					"sublime_text": "*",
+					"details": "https://github.com/Chris---/SublimeText-TikZ/tags"
+				}
+			]
 		}
 	]
 }
