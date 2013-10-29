@@ -12,6 +12,16 @@
 			]
 		},
 		{
+			"name": "Clouds Color Schemes",
+			"details": "https://github.com/Chris---/SublimeText-Clouds-Color-Schemes",
+			"releases": [
+				{
+					"sublime_text": "*",
+					"details": "https://github.com/Chris---/SublimeText-Clouds-Color-Schemes/tree/master"
+				}
+			]
+		},
+		{
 			"name": "File Navigator",
 			"details": "https://github.com/Chris---/SublimeText-File-Navigator",
 			"labels": ["file navigation"],
