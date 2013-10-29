@@ -12,6 +12,17 @@
 			]
 		},
 		{
+			"name": "Clouds Color Schemes",
+			"details": "https://github.com/Chris---/SublimeText-Clouds-Color-Schemes",
+			"labels": ["color scheme"],
+			"releases": [
+				{
+					"sublime_text": "*",
+					"details": "https://github.com/Chris---/SublimeText-Clouds-Color-Schemes/tree/master"
+				}
+			]
+		},
+		{
 			"name": "File Navigator",
 			"details": "https://github.com/Chris---/SublimeText-File-Navigator",
 			"labels": ["file navigation"],
@@ -38,7 +49,6 @@
 		{
 			"name": "Keymap Redefiner",
 			"details": "https://github.com/Chris---/SublimeText-Keymap-Redefiner",
-			"labels": ["latex"],
 			"releases": [
 				{
 					"sublime_text": "*",

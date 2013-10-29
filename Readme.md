@@ -5,6 +5,7 @@ Repository for the package.json of the following packages:
 ## Packages
 
 - [Calendar Week](https://github.com/Chris---/SublimeText-Calendar-Week)
+- [Clouds Color Schemes](https://github.com/Chris---/SublimeText-Clouds-Color-Schemes)
 - [File Navigator](https://github.com/Chris---/SublimeText-File-Navigator)
 - [Git GUI Clients](https://github.com/Chris---/SublimeText-Git-GUI-Clients)
 - [Keymap Redefiner](https://github.com/Chris---/SublimeText-Keymap-Redefiner)
@@ -18,7 +19,6 @@ Repository for the package.json of the following packages:
 - [Sublime Text 3 Snippets](https://github.com/Chris---/SublimeText-Sublime-Text-3-Snippets)
 - [TeX Live Package Manager](https://github.com/Chris---/SublimeText-TeX-Live-Package-Manager)
 - [TikZ](https://github.com/Chris---/SublimeText-TikZ)
-
 
 ## Status
 
