@@ -69,12 +69,13 @@
 		},
 		{
 			"name": "LaTeX-cwl",
-			"details": "https://github.com/csch0/LaTeX-cwl",
+			"author": "csch0",
+			"details": "https://github.com/latexing/LaTeX-cwl",
 			"labels": ["latex"],
 			"releases": [
 				{
 					"sublime_text": "*",
-					"details": "https://github.com/csch0/LaTeX-cwl/tree/master"
+					"details": "https://github.com/csch0/latexing/tree/master"
 				}
 			]
 		},
