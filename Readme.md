@@ -4,33 +4,33 @@ Repository for the package.json of the following packages:
 
 ## Packages
 
-- [Calendar Week](https://github.com/Chris---/SublimeText-Calendar-Week)
-- [Clouds Color Schemes](https://github.com/Chris---/SublimeText-Clouds-Color-Schemes)
-- [File Navigator](https://github.com/Chris---/SublimeText-File-Navigator)
-- [Git GUI Clients](https://github.com/Chris---/SublimeText-Git-GUI-Clients)
-- [Keymap Redefiner](https://github.com/Chris---/SublimeText-Keymap-Redefiner)
-- [LaTeX Blindtext](https://github.com/Chris---/SublimeText-LaTeX-Blindtext)
-- [LaTeX-cwl](https://github.com/Chris---/LaTeX-cwl)
-- [oauthlib](https://github.com/Chris---/SublimeText-OAuthlib)
-- [Package Reloader](https://github.com/Chris---/SublimeText-Package-Reloader)
-- [Package Syncing](https://github.com/Chris---/SublimeText-Package-Syncing)
-- [Preference Helper](https://github.com/Chris---/SublimeText-Preference-Helper)
-- [Sublime Text 2 Snippets](https://github.com/Chris---/SublimeText-Sublime-Text-2-Snippets)
-- [Sublime Text 3 Snippets](https://github.com/Chris---/SublimeText-Sublime-Text-3-Snippets)
-- [TeX Live Package Manager](https://github.com/Chris---/SublimeText-TeX-Live-Package-Manager)
-- [TikZ](https://github.com/Chris---/SublimeText-TikZ)
+- [Calendar Week](https://github.com/csch0/SublimeText-Calendar-Week)
+- [Clouds Color Schemes](https://github.com/csch0/SublimeText-Clouds-Color-Schemes)
+- [File Navigator](https://github.com/csch0/SublimeText-File-Navigator)
+- [Git GUI Clients](https://github.com/csch0/SublimeText-Git-GUI-Clients)
+- [Keymap Redefiner](https://github.com/csch0/SublimeText-Keymap-Redefiner)
+- [LaTeX Blindtext](https://github.com/csch0/SublimeText-LaTeX-Blindtext)
+- [LaTeX-cwl](https://github.com/latexing/LaTeX-cwl)
+- [oauthlib](https://github.com/csch0/SublimeText-OAuthlib)
+- [Package Reloader](https://github.com/csch0/SublimeText-Package-Reloader)
+- [Package Syncing](https://github.com/csch0/SublimeText-Package-Syncing)
+- [Preference Helper](https://github.com/csch0/SublimeText-Preference-Helper)
+- [Sublime Text 2 Snippets](https://github.com/csch0/SublimeText-Sublime-Text-2-Snippets)
+- [Sublime Text 3 Snippets](https://github.com/csch0/SublimeText-Sublime-Text-3-Snippets)
+- [TeX Live Package Manager](https://github.com/csch0/SublimeText-TeX-Live-Package-Manager)
+- [TikZ](https://github.com/csch0/SublimeText-TikZ)
 
 ## Status
 
-[![Build Status](https://travis-ci.org/Chris---/SublimeText-Packages.png?branch=master)](https://travis-ci.org/Chris---/SublimeText-Packages)
+[![Build Status](https://travis-ci.org/csch0/SublimeText-Packages.png?branch=master)](https://travis-ci.org/csch0/SublimeText-Packages)
 
 ## Donating
 
 Support any of this projects via [gittip][] or [paypal][].
 
-[![Support via Gittip](https://rawgithub.com/chris---/Donation-Badges/master/gittip.jpeg)][gittip] [![Support via PayPal](https://rawgithub.com/chris---/Donation-Badges/master/paypal.jpeg)][paypal]
+[![Support via Gittip](https://rawgithub.com/csch0/Donation-Badges/master/gittip.jpeg)][gittip] [![Support via PayPal](https://rawgithub.com/csch0/Donation-Badges/master/paypal.jpeg)][paypal]
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Chris---/sublimetext-packages/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/csch0/sublimetext-packages/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
-[gittip]: https://www.gittip.com/Chris---
+[gittip]: https://www.gittip.com/csch0
 [paypal]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZWZCJPFSZNXEW
