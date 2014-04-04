@@ -70,12 +70,12 @@
 		{
 			"name": "LaTeX-cwl",
 			"author": "csch0",
-			"details": "https://github.com/latexing/LaTeX-cwl",
+			"details": "https://github.com/LaTeXing/LaTeX-cwl",
 			"labels": ["latex"],
 			"releases": [
 				{
 					"sublime_text": "*",
-					"details": "https://github.com/csch0/latexing/tree/master"
+					"details": "https://github.com/LaTeXing/LaTeX-cwl/tree/master"
 				}
 			]
 		},
@@ -156,12 +156,12 @@
 		},
 		{
 			"name": "TikZ",
-			"details": "https://github.com/csch0/SublimeText-TikZ",
+			"details": "https://github.com/LaTeXing/LaTeX-TikZ",
 			"labels": ["latex"],
 			"releases": [
 				{
 					"sublime_text": "*",
-					"details": "https://github.com/csch0/SublimeText-TikZ/tags"
+					"details": "https://github.com/LaTeXing/LaTeX-TikZ/tags"
 				}
 			]
 		}
