@@ -11,7 +11,6 @@ Repository for the package.json of the following packages:
 - [Keymap Redefiner](https://github.com/csch0/SublimeText-Keymap-Redefiner)
 - [LaTeX Blindtext](https://github.com/csch0/SublimeText-LaTeX-Blindtext)
 - [LaTeX-cwl](https://github.com/latexing/LaTeX-cwl)
-- [oauthlib](https://github.com/csch0/SublimeText-OAuthlib)
 - [Package Reloader](https://github.com/csch0/SublimeText-Package-Reloader)
 - [Package Syncing](https://github.com/csch0/SublimeText-Package-Syncing)
 - [Preference Helper](https://github.com/csch0/SublimeText-Preference-Helper)
@@ -19,6 +18,11 @@ Repository for the package.json of the following packages:
 - [Sublime Text 3 Snippets](https://github.com/csch0/SublimeText-Sublime-Text-3-Snippets)
 - [TeX Live Package Manager](https://github.com/csch0/SublimeText-TeX-Live-Package-Manager)
 - [TikZ](https://github.com/csch0/SublimeText-TikZ)
+
+## Dependencies
+
+- [oauthlib](https://github.com/packagecontrol/oauthlib)
+- [requests-oauthlib](https://github.com/packagecontrol/requests-oauthlib)
 
 ## Status
 

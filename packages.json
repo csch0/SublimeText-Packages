@@ -80,16 +80,6 @@
 			]
 		},
 		{
-			"name": "oauthlib",
-			"details": "https://github.com/csch0/SublimeText-OAuthlib",
-			"releases": [
-				{
-					"sublime_text": "*",
-					"details": "https://github.com/csch0/SublimeText-OAuthlib/tags"
-				}
-			]
-		},
-		{
 			"name": "Package Reloader",
 			"details": "https://github.com/csch0/SublimeText-Package-Reloader",
 			"labels": ["development"],
