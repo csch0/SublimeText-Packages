@@ -80,6 +80,19 @@
 			]
 		},
 		{
+			"name": "LaTeXing",
+			"author": "csch0",
+            "details": "https://github.com/LaTeXing/LaTeXing",
+			"labels": ["latex"],
+			"releases": [
+				{
+					"sublime_text": ">=3000",
+					"details": "https://github.com/LaTeXing/LaTeXing/tree/master",
+                    "dependencies": ["oauthlib", "requests", "requests-oauthlib", "tabulate"]
+				}
+			]
+		},
+		{
 			"name": "Package Reloader",
 			"details": "https://github.com/csch0/SublimeText-Package-Reloader",
 			"labels": ["development"],
